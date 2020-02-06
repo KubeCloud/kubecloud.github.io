@@ -1,0 +1,72 @@
+/*  typography */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap');
+
+@font-face {
+  font-family: SharpGroteskSmBold20;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/SharpGroteskSmBold20.otf") format('opentype');
+}
+
+@font-face {
+  font-family: SharpGroteskBook;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/SharpGroteskBook20.otf") format('opentype');
+}
+
+body {
+  line-height: 1.7;
+  font-family: $primary-font;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+  color: $text-color;
+}
+
+p, .paragraph {
+  font-weight: 500;
+  color: $text-color;
+  font-size: 1em;
+  line-height: 2;
+  font-family: $primary-font;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $text-color;
+  font-family: $bold-font;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+a{
+  &.h1,&.h2,&.h3,&.h4,&.h5,&.h6{
+    color: $text-color-dark;
+  }
+}
+
+h1, .h1{
+  font-size: 40px;
+}
+
+h2, .h2{
+  font-size: 35px;
+  font-weight: 800;
+}
+
+h3, .h3{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+h4, .h4{
+  font-size: 22px;
+}
+
+h5, .h5{
+  font-size: 18px;
+}
+
+h6, .h6{
+  font-size: 16px;
+}

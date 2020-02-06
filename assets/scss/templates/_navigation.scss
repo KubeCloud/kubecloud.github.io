@@ -1,0 +1,96 @@
+.navigation {
+  background-color:$light-grey;
+  color: $black;
+}
+
+.navbar-toggler {
+  color: $black;
+}
+.nav-item{
+  margin: 0;
+
+  .nav-link{
+    color: $black;
+    text-transform: capitalize;
+    font-family: SharpGroteskSmBold20;
+  }
+}
+
+.navbar-brand img{
+  width: 200px;
+}
+
+.navbar-white .navbar-nav .nav-link {
+  color: $black;
+  &:hover{
+    color: $black;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 20px;
+}
+
+.mobile-view{
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.desktop-view{
+  display: block;
+  @include desktop {
+    display: none;
+  }
+}
+
+/* search */
+.search-btn {
+  color: $black;
+  border: 0;
+  background: transparent;
+}
+
+.search-wrapper {
+  color: $text-color-light;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 2;
+  visibility: hidden;
+  transition: .2s ease;
+  opacity: 0;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.search-box {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  color: $black;
+  background: grey;
+  font-size: 20px;
+  padding: 0;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.search-close {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  page-break-after: 10px;
+  font-size: 20px;
+}

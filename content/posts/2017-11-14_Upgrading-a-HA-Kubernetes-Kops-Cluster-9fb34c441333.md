@@ -1,15 +1,17 @@
 ---
 title: Upgrading a HA Kubernetes Kops Cluster
+author: "Kasper Nissen"
 description: >-
   The Kubernetes release cadence is fast-paced with minor releases every
   quarter. Awesome! But how do I keep up?
 date: '2017-11-14T17:10:35.333Z'
-categories: []
-keywords: []
-slug: /@phennex/upgrading-a-ha-kubernetes-kops-cluster-9fb34c441333
+categories:
+- Kops
+type: "post"
+image: /images/1__B5__q4EKPr6__d6YsYXtpovw.jpeg
 ---
 
-![](img/1__B5__q4EKPr6__d6YsYXtpovw.jpeg)
+![](/images/1__B5__q4EKPr6__d6YsYXtpovw.jpeg)
 
 The Kubernetes release cadence is fast-paced with minor releases every quarter. Awesome! But how do I keep up?
 

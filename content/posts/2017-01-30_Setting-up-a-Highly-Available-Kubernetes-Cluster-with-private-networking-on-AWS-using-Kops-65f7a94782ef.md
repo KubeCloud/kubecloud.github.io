@@ -6,10 +6,10 @@ description: >-
   This is the first post in a series of Kubernetes and Kubernetes Operations
   (Kops) related blog posts.
 date: '2017-01-30T19:59:00.161Z'
-categories: []
-keywords: []
-slug: >-
-  /@phennex/setting-up-a-highly-available-kubernetes-cluster-with-private-networking-on-aws-using-kops-65f7a94782ef
+categories:
+- Kops
+type: "post"
+author: Kasper Nissen
 ---
 
 This is the first post in a series of Kubernetes and Kubernetes Operations (Kops) related blog posts.
@@ -287,7 +287,7 @@ We therefore need to make a little workaround and use the public zone we created
 
 As you can see, Kops has created some records in Route53 in the private zone.
 
-![](img/0__O3SLKBZ0YWGXqX1Y.png)
+![](/images/0__O3SLKBZ0YWGXqX1Y.png)
 
 The 2 records we want to be resolvable from the public internet are:
 

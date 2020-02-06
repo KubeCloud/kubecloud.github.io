@@ -1,13 +1,13 @@
 ---
 title: '[Guide] Setting up a Kubernetes on ARM cluster on Raspberry Pis'
+author: "Kasper Nissen"
 description: >-
   This blog post will walk you through the steps of setting up kubernetes-on-arm
   that Luxas has created. Thanks to Luxas’ project it is…
 date: '2016-04-13T13:08:34.838Z'
-categories: []
-keywords: []
-slug: >-
-  /@phennex/guide-setting-up-a-kubernetes-on-arm-cluster-on-raspberry-pis-baac1511be3d
+categories: 
+- Thesis
+type: "post"
 ---
 
 This blog post will walk you through the steps of setting up kubernetes-on-arm that [Luxas](https://github.com/luxas/) has created. Thanks to [Luxas’ project](https://github.com/luxas/kubernetes-on-arm) it is pretty straightforward to get Kubernetes up and running on a Raspberry Pi. This guide will walk you through a fork of Luxas’ project, that contains minor adjustments to the [DNS](https://github.com/rpicloud/kubernetes-on-arm/commit/d7635f8e6e45f9657f53f71b5f0b54403da0c7af) and a couple of [extra scripts](https://github.com/rpicloud/kubernetes-on-arm/commit/51d5edaa548f70680e43cdaa7f0a79d9edb371a6).
@@ -16,13 +16,13 @@ This blog post will walk you through the steps of setting up kubernetes-on-arm t
 
 The goal of this guide to get a cluster of four nodes up and running. One master and three workers. In this guide ArchLinux will be installed on all of the nodes and static IPs assigned. We have tried ArchLinux out and found it most stable in our setup. Afterwards Kubernetes-on-arm will be installed, and each node configured as either a master or a worker. Let’s get started!
 
-![](img/0__319jSZ4qdgJgHaW4.jpg)
+![](/images/0__319jSZ4qdgJgHaW4.jpg)
 
 #### SD cards
 
 First the SD cards must be flashed. Since we are using OSX, we used the build-in Disk Utility to erase each SD card with the format “MS-DOS (FAT)” and Scheme “GUID Partition Map”. Remember to unmount each card before you unplug it.
 
-![](img/0__VylGV3YROrxRl__FT.png)
+![](/images/0__VylGV3YROrxRl__FT.png)
 
 Afterwards we continued on a Linux machine inserting one SD card at a time.
 
@@ -30,7 +30,7 @@ Afterwards we continued on a Linux machine inserting one SD card at a time.
 sudo fdisk -l
 ```
 
-![](img/0__S8Vq0N3NiOwm61tg.png)
+![](/images/0__S8Vq0N3NiOwm61tg.png)
 
 As seen above the SD card is found as /dev/sdb, your device might get a different name. To be able to write to the SD card /dev/sdb2 is unmounted. Afterwards pull kubernetes-on-arm and start writing with the arguments for the Raspberry Pi 2, ArchLinux and kubesystemd. There are more options on Luxas’ kubernetes-on-arm.
 
@@ -42,7 +42,7 @@ You will be prompted that you will loose all data on the device, so make sure th
 
 The write script will download and copy the files to your SD card, and in the end you should see an output similar to the one below.
 
-![](img/0__1gqy2EiUdWpRXCE1.png)
+![](/images/0__1gqy2EiUdWpRXCE1.png)
 
 Repeat this step for each SD card and you should be ready for the next step.
 

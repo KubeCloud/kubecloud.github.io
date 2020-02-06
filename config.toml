@@ -1,0 +1,103 @@
+######################## default configuration ####################
+baseUrl = "https://kubecloud.io"
+canonifyURLs = true
+languageCode = "en-us"
+title = "kubecloud"
+summaryLength = "50"
+paginate = 6
+disqusShortname = ""
+
+[outputs]
+  home = ["HTML", "AMP", "RSS", "JSON"]
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/fuse.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/mark.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/search.js"
+
+
+############################## navigation ###############################
+[menu]
+
+  # main menu
+  [[menu.main]]
+  name = "About"
+  URL = "about"
+  weight = 3
+
+  # footer menu
+  # main menu
+  [[menu.footer]]
+  name = "Blog"
+  URL = "blog"
+  weight = 2
+
+  [[menu.footer]]
+  name = "About"
+  URL = "about/about"
+  weight = 3
+
+#################### default parameters ################################
+[params]
+logo = "images/kubecloud.png"
+footerLogo = "images/kubecloud.png"
+home = "Home"
+
+# Meta data
+description = "Kubernetes, Raspberry Pi, Cloud Native"
+author = "kubecloud.io"
+
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+
+
+location = "Aarhus, Denmark"
+
+# copyright
+copyright = " @2020 [kubecloid.io](https://kubecloud.io) All Rights Reserved "
+
+  # Preloader
+  [params.preloader]
+  enable = true
+  preloader = "" # use .png , .svg or .gif format
+
+  # search
+  [params.search]
+  enable = true
+
+
+############################# social site ########################
+
+
+[[params.social]]
+title = "twitter"
+icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+link = "https://twitter.com/phennex"
+
+
+[[params.social]]
+title = "twitter"
+icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+link = "https://twitter.com/mrjensens"
+
+[[params.social]]
+title = "github"
+icon = "ti-github" # themify icon : https://themify.me/themify-icons
+link = "https://github.com/kubecloud"
+

@@ -4,9 +4,11 @@ description: >-
   CloudNativeCon + KubeCon Europe 2017 is over! Wow, what a great conference. It
   was great to meet so many engaged and passionate people…
 date: '2017-04-02T09:47:06.851Z'
-categories: []
-keywords: []
-slug: /@phennex/cloudnativecon-kubecon-europe-2017-12c37c3af38c
+categories:
+- Conference
+author: Kasper Nissen
+type: "post"
+image: /images/0__ux6G1PpHuCqxNaca.JPG
 ---
 
 CloudNativeCon + KubeCon Europe 2017 is over! Wow, what a great conference. It was great to meet so many engaged and passionate people working the Cloud Native ecosystem.
@@ -53,15 +55,15 @@ The last keynotes featured great talks about the OpenAI project, Kubernetes/Cont
 
 The closing keynotes of day 1 consisted of a series of 6 small keynotes from: Chen Goldberg, Director of Engineering, Container Engine & Kubernetes, Google; Brandon Philips, CTO, CoreOS; Mark van Straten, Senior Software Architect, Q42; Nicholas Weaver, Director of Software Engineering, Data Center Solutions Group, Intel Corporation; Michelle Noorali, Software Engineer, Deis; Kelsey Hightower, Google Cloud Team & CloudNativeCon and KubeCon Conference Co-Chair.
 
-![](img/0__ux6G1PpHuCqxNaca.JPG)
+![](/images/0__ux6G1PpHuCqxNaca.JPG)
 
 The velocity of the Kubernetes project is insane! The community is extremely hardworking and dedicated to making Kubernetes the defacto standard (if it isn’t already) for running container package software.
 
-![](img/0__4Mh9qab61y__jo3tW.JPG)
+![](/images/0__4Mh9qab61y__jo3tW.JPG)
 
 Further, Google is no longer the majority committer to the Kubernetes project. The community is a diverse community consisting of big enterprises, small startups to individual committers.
 
-![](img/0__gNXvA__dfE8XUipZf.JPG)
+![](/images/0__gNXvA__dfE8XUipZf.JPG)
 
 Wow, Philips Hue is being controlled by Kubernetes if you use My Hue or any of the services that talks to the Hue Cloud API. Mark gave an interesting story on how they build their architecture. Further, Brandon Philips introduced and demoed a new [offering](https://coreos.com/blog/quay-application-registry-for-kubernetes.html) by quay.io for storing helm charts.
 
@@ -93,7 +95,7 @@ The last morning keynote was given by Kelsey Hightower on Cluster Federation. Ke
  _Lucas Käldström, Upper Secondary School Student, Individual Maintainer_   
  If you haven’t heard about Lucas Käldström, I’m sure you will in the future! Lucas is only 17 years old and has been a Kubernetes maintainer for about a year. Before that, he built the project: kubernetesonarm, that made setting up a Kubernetes cluster on arm easy! We used this project as the base for our Kubernetes Raspberry Pi clusters. His talk was a demonstration of how he has built a multi-architecture kubernetes cluster using kubeadm among other tools to set up the cluster. With this cluster, Lucas further demonstrated how to use custom metrics for the Horizontal Pod Autoscaling feature of Kubernetes. We highly recommend you to check out his workshop explaining all the nitty gritty details of the setup [here](https://github.com/luxas/kubeadm-workshop).
 
-![](img/0__rc8MEtFNolRYYJpW.jpg)
+![](/images/0__rc8MEtFNolRYYJpW.jpg)
 
 **Delve into Helm: Advanced DevOps**   
  _Lachlan Evenson & Adam Reese, Deis_   
@@ -106,9 +108,9 @@ The last morning keynote was given by Kelsey Hightower on Cluster Federation. Ke
 **All Attendees Party**   
  The conference ended with a great party sponsored by CoreOS, with great food and lots of great conversation.
 
-![](img/0__Z7SRACV2lZ4AvuM8.jpg)
-![](img/0__oASDDmKGnZBfnRkd.jpg)
-![](img/0__HFgalziICR3Cbcr__.jpg)
+![](/images/0__Z7SRACV2lZ4AvuM8.jpg)
+![](/images/0__oASDDmKGnZBfnRkd.jpg)
+![](/images/0__HFgalziICR3Cbcr__.jpg)
 
 All in all — CloudNativeCon + KubeCon has been an awesome conference! We’ve met some really cool people! Everybody has been very welcoming and happy to share their interests. Great talks, great venue — even though the rooms were a bit crowed sometimes.
 

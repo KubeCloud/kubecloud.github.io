@@ -4,9 +4,11 @@ description: >-
   In the first post of our mini-series about Kops, I demonstrated how you could
   set up a highly available Kubernetes cluster on AWS in an…
 date: '2017-03-12T17:51:00.000Z'
-categories: []
-keywords: []
-slug: /@phennex/ha-kubernetes-cluster-on-aws-kops-makes-it-easy-2337806d0311
+categories:
+- Kops
+author: Kasper Nissen
+type: "post"
+image: /images/0__oIFufUcnXVDVUIFE.png
 ---
 
 In the first [post](http://kubecloud.io/setup-ha-k8s-kops/) of our mini-series about Kops, I demonstrated how you could set up a highly available Kubernetes cluster on AWS in an existing VPC leveraging the awesome open-source project Kops.
@@ -19,7 +21,7 @@ Therefore, to show some of the magic that Kops can do, I will write this follow-
 
 As in the previous post, we want a highly available cluster spread across multiple availability zones, along with private networking to ensure a closed environment. The following diagram illustrates the setup we would like to accomplish.
 
-![](img/0__oIFufUcnXVDVUIFE.png)
+![](/images/0__oIFufUcnXVDVUIFE.png)
 
 There are a couple of prerequisites that need to be in place before we can spin up our cluster. First, you need an AWS Account, a domain, Kops, awscli (not necessary since you can do the same in the console).
 
@@ -99,7 +101,7 @@ The creation of a cluster usally takes about 5–10 minutes.
 
 As, also mentioned in the previous post, this will create all DNS entries in the private zone, thereby only making it accessible from within the AWS VPC. Therefore if you want to be able to connect to your cluster from your local machine, recreate the following entries in the public zone for your domain:
 
-![](img/0__G7aeT2SvwGbmLZpc.png)
+![](/images/0__G7aeT2SvwGbmLZpc.png)
 
 To verify that your cluster is up and running and reachable from your machine:
 

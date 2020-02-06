@@ -5,9 +5,10 @@ description: >-
   setting up a Raspberry Pi Kubernetes Cluster and publish an…
 date: '2018-09-14T11:29:08.732Z'
 author: Kasper Nissen
-categories: [raspberrypi]
-keywords: [raspberrypi, kubernetes]
-slug: /phennex/kubernetes-1-11-raspberry-pi
+categories:
+- "Raspberry Pi"
+image: /images/1__WCeZuH7st1kQhjHjTj9kuw.jpeg
+type: "post"
 ---
 
 ![](/images/1__WCeZuH7st1kQhjHjTj9kuw.jpeg)

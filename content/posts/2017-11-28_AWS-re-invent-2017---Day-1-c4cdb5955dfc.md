@@ -4,9 +4,11 @@ description: >-
   The focus of my first day at Reinvent was mostly on the topic of security and
   financial services. Re:invent is very crowded and there’s…
 date: '2017-11-28T03:50:56.264Z'
-categories: []
-keywords: []
-slug: /@phennex/aws-re-invent-2017-day-1-c4cdb5955dfc
+categories:
+- Conference
+author: "Kasper Nissen"
+type: "post"
+image: /images/1__TjRW94gHYjs__palVBqkjQg.jpeg
 ---
 
 The focus of my first day at Reinvent was mostly on the topic of security and financial services. Re:invent is very crowded and there’s crazy lines for some of the sessions. Note to self: If you don’t have a reserved seat — come early (like really early). In the following I will give a short write up of the breakout sessions that I attended.
@@ -15,13 +17,13 @@ All right, let’s get started.
 
 #### Security Anti-Patterns: Mistakes to Avoid
 
-![](img/1__TjRW94gHYjs__palVBqkjQg.jpeg)
+![](/images/1__TjRW94gHYjs__palVBqkjQg.jpeg)
 
 The first talk of the day featured Kurt Gray, Global Solutions Architect for Financial Services at AWS, and Jonathan Baulch, Director, Architecture at Fidelity Investments.
 
 Kurt started out by defining a anti-patterns, with the following great slide.
 
-![](img/1__m2kcg__p7IScCIdxvrDptnQ.jpeg)
+![](/images/1__m2kcg__p7IScCIdxvrDptnQ.jpeg)
 
 Next, he presented a bunch of security anti-patterns. In the following, I will try to highlight some of these and present the takeaways from this presentation.
 
@@ -31,11 +33,11 @@ _**Don’t sign your accounts up on individual people, what happens if they don�
 **_AWS Account Overcrowding  
 _**Don’t overcrowd your AWS account. It makes auditing a lot harder, further, the blast radius will be a lot bigger if compromised.
 
-![](img/1__QcZoBsmZEniiDwqy7GqT9A.jpeg)
+![](/images/1__QcZoBsmZEniiDwqy7GqT9A.jpeg)
 
 Instead, use a multi-account strategy. It will limit exposure if something gets compromised. Think of your AWS accounts as single family homes
 
-![](img/1__c9rCVwu9T12mkCz6JlF8YQ.jpeg)
+![](/images/1__c9rCVwu9T12mkCz6JlF8YQ.jpeg)
 
 **_Trusted IP Access w/o Client Auth  
 _**Routing is not security. Implement and use a proper authentication methods instead.
@@ -49,13 +51,13 @@ _**Instead of using home-brewed questionaries, Use standardized controls, e.g., 
 **_Manual Technical Auditing  
 _**How are you auditing yourself? Stop using manual steps, instead automate this process using Continuous Automated Auditing.
 
-![](img/1__qNDNRcQTbUxfPKgqeig6ow.jpeg)
+![](/images/1__qNDNRcQTbUxfPKgqeig6ow.jpeg)
 
 **_Over-the-wall Software Delivery method_**   
 Over-the-wall software delivery method is where dev, QA, and ops are kept separate and software is handed off between departments. Instead, you should move towards a DevOps model with small interdisciplinary delivery teams and where developers are on-call. You built it, you run it.  
 Add Security and enter DevSecOps. Proactive security checking, penetration tests etc.
 
-![](img/1__XBpWdEbrn2mqU7bl5mkBfw.jpeg)
+![](/images/1__XBpWdEbrn2mqU7bl5mkBfw.jpeg)
 
 After the presentation by Kurt, Jonathan from Fidelity Investments took over and talked about how they do DevSecOps at Fidelity Investments.
 
@@ -76,7 +78,7 @@ The second talk of the day featured Alan Garver, Mahdi Sajjadpour, and Jonathan 
 
 Back in the 2000s, Amazon was built as a monolithic application. They made the transition to a service-oriented architecture and shifted two the 2 pizza teams organization. These teams should only be responsible for their product.
 
-![](img/1__OlyNVAloIUGuQ270Nb8WUQ.jpeg)
+![](/images/1__OlyNVAloIUGuQ270Nb8WUQ.jpeg)
 
 Some key elements in this transformation includes
 
@@ -90,7 +92,7 @@ Further, this transformation also included incorporating infrastructure code rel
 
 How do you then enable all the necessary tools for enabling developers to be self-driving and autonomous while still being compliant and secure?
 
-![](img/1__Z28x5Z8biZiHR2ZcM__KJeg.jpeg)
+![](/images/1__Z28x5Z8biZiHR2ZcM__KJeg.jpeg)
 
 **_What does self-service infrastructure enable?_**
 
@@ -103,7 +105,7 @@ How do you then enable all the necessary tools for enabling developers to be sel
 
 **_How to get to self-service?_**
 
-![](img/1__s__QQIxwA__9B77VwMh__pV8A.jpeg)
+![](/images/1__s__QQIxwA__9B77VwMh__pV8A.jpeg)
 
 We need to make sure that developers can get the resources they need.
 
@@ -113,7 +115,7 @@ The presentation further included a demo of how to build a unified interface for
 
 To summarize this talk; you can provide your developers (your customers) with the tools they need in order to fast and easily deploy their features, while still enforcing policies.
 
-![](img/1__wZgF2HSRkdZhjM1wEMb7rg.jpeg)
+![](/images/1__wZgF2HSRkdZhjM1wEMb7rg.jpeg)
 
 #### Getting Started with Amazon Aurora
 
@@ -121,13 +123,13 @@ The third talk of the day was an introduction to Amazon Aurora. I’ve been foll
 
 **_What is Aurora?_**
 
-![](img/1__gB__yxbOGuZfRI15MBO__3Sw.jpeg)
+![](/images/1__gB__yxbOGuZfRI15MBO__3Sw.jpeg)
 
 Aurora is a fairly new database offering from AWS and can be a drop-in replacement for MySQL and Postgres. It promises a lot! Better performance, higher availability, and cheaper. And all this is delivered as a managed services on AWS.
 
 The more technical side of things includes a scale-out and distributed design, built as a service oriented architecture, which will automate a lot of administrative tasks. Aurora automatically replicas over 3 Availability zones and always keeps 6 copies in order to tolerate zone failures.
 
-![](img/1__vGq__14XNWDXx3QyZx35RbQ.jpeg)
+![](/images/1__vGq__14XNWDXx3QyZx35RbQ.jpeg)
 
 It integrates with many of AWS other cloud services such as S3, lambda, IAM, etc. And as it is a drop-in replacement for MySQL and Postgres — all third-party tools should be compatible as well.
 
@@ -137,7 +139,7 @@ AWS Aurora customers have migrated to Aurora from Cassandra and have seen signif
 
 **_How did they achieve this?_**
 
-![](img/1__m3kMbVDHLUECu6iYMXV4hg.jpeg)
+![](/images/1__m3kMbVDHLUECu6iYMXV4hg.jpeg)
 
 Basically, they are doing less and have made some significant improvements in terms of processing work asynchronously.
 

@@ -1,0 +1,24 @@
+<div class="col-lg-2">
+  <!-- Tags -->
+  <div class="widget">
+    <h4 class="widget-title">Tags</h4>
+    {{- if isset .Site.Taxonomies "tags" }}
+    {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
+    <ul class="list-inline">
+      {{- range $name, $items := .Site.Taxonomies.tags }}
+      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+          href="{{ `tags/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+    {{- end }}
+  </div>
+
+    <!-- Tags -->
+  <div class="widget">
+    <p>Proud End User Supporter of</p>
+    <img src="images/cncf-color.png" style="width: 80%" alt="CNCF logo">
+    <ul class="list-inline">
+    </ul>
+  </div>
+</div>

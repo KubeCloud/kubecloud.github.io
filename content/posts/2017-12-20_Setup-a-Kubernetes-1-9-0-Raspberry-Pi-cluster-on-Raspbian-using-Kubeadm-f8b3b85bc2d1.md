@@ -1,14 +1,14 @@
 ---
 title: Setup a Kubernetes 1.9.0 Raspberry Pi cluster on Raspbian using Kubeadm
+author: Kasper Nissen
 description: >-
   Apparently it’s that time of the year again. Approximately a year ago I
   published a “state-of-the-art” how to run a Raspberry Pi Kubernetes…
 date: '2017-12-20T21:12:14.983Z'
-categories: []
-img: 0__GPcn3MHgE5zbLhVa.jpg
-keywords: []
-slug: >-
-  /phennex/kubernetes-1-9-0-raspberry-pi
+categories:
+- Raspberry Pi
+image: /images/0__GPcn3MHgE5zbLhVa.jpg
+type: "post"
 ---
 
 ![Image](/images/0__GPcn3MHgE5zbLhVa.jpg)
@@ -258,6 +258,6 @@ Containers:
 
 As you can see the parameter was passed correctly to the kube-controller-manager.
 
-![](img/1__31D9YBkzJzv5vx36PsZLQg.jpeg)
+![](/images/1__31D9YBkzJzv5vx36PsZLQg.jpeg)
 
 That was all for this time folks. Happy hacking.

@@ -1,0 +1,271 @@
+/* card */
+.card {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 1rem 1.8rem 0 rgba(0,0,0,.05);
+
+  &-header,
+  &-footer,
+  &-img,
+  &-img-top {
+    border: 0;
+    border-radius: 0;
+  }
+}
+
+.featured-post {
+  box-shadow: 0 1rem 1.8rem 0 rgba(0,0,0,.05);
+  margin-top: 20px;
+  @media screen and (min-width: 600px) {
+    padding-right: 0px;
+  }
+  .card-title {
+    @include tablet {
+      margin-left: 0;
+      font-size: 30px;
+    }
+  }
+}
+
+.post-meta {
+  span {
+    color: #444;
+    font-weight: 500;
+  }
+}
+
+/* recent post */
+.recent-post-thumb {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.small-post-border {
+  &:not(:last-child) {
+    border-right: 1px solid $border-color;
+
+    @include desktop {
+      border-right: 0;
+      border-bottom: 1px solid $border-color;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+/* widget */
+.widget {
+  text-align: center;
+  margin-bottom: 50px;
+
+  &-title {
+    display: inline-block;
+    border-top: .5px solid $primary-color;
+    border-bottom: .5px solid $primary-color;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+
+    a {
+      color: $text-color;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.social-links {
+  li {
+    a {
+      height: 35px;
+      width: 35px;
+      background: $primary-color;
+      color: $white;
+      display: block;
+      line-height: 35px;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+/* pagination */
+.pagination {
+  justify-content: center;
+
+  .page-item {
+
+    .page-link {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      color: $primary-color;
+      background-color: $white;
+
+
+      &:hover {
+        background: $black;
+        color: $white;
+      }
+    }
+
+    &:first-child,
+    &:last-child {
+      .page-link {
+        border-radius: 0;
+      }
+    }
+
+    &.active {
+      .page-link {
+        background: $black;
+        color: $white;
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+}
+
+.author-thumb-sm {
+  max-height: 165px;
+  max-width: 165px;
+}
+
+
+/* markdown style */
+.content {
+  img {
+    max-width: 100%;
+  }
+
+  * {
+    margin-bottom: 20px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 15px;
+  }
+
+  ol {
+    padding-left: 20px;
+  }
+
+  ul {
+    padding-left: 0;
+
+    li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 15px;
+      list-style-type: none;
+
+      &::before {
+        position: absolute;
+        content: "\e71b";
+        font-family: $icon-font;
+        font-size: 14px;
+        left: 0;
+        top: 1px;
+        color: $primary-color;
+        transition: .3s ease;
+      }
+    }
+  }
+
+  table {
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+
+    border: 1px solid #dee2e6;
+
+    th,
+    td {
+      padding: .75rem;
+      vertical-align: top;
+      border: 1px solid #dee2e6
+    }
+
+    thead {
+      background: darken($color: grey, $amount: 2);
+    }
+
+    tbody {
+      background: grey;
+
+      td {
+        text-align: left !important;
+      }
+    }
+  }
+
+
+  blockquote {
+    padding: 20px;
+    // background: $light-grey;
+    // border-left: 3px solid $primary-color;
+
+    p {
+      margin-bottom: 0;
+      color: $text-color-dark;
+      font-style: italic !important;
+      font-size: 28px;
+      line-height: 1.5;
+    }
+  }
+
+
+  pre {
+    padding: 10px 20px;
+    background: grey;
+
+    code {
+      border: 0;
+      background: transparent;
+      padding: 0;
+    }
+  }
+
+  a {
+    color: $primary-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  pre {
+    background-color: grey;
+  }
+
+  code {
+    padding: 3px 5px;
+    background: grey;
+    color: $black;
+  }
+}
+
+.pdf-viewer {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* /markdown style */

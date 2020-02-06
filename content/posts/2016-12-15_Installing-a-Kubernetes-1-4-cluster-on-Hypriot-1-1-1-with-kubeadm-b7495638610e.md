@@ -4,13 +4,14 @@ description: >-
   It’s been a while since our last blog post. However, we are back and again
   working with Kubernetes on a daily basis. This blog post will…
 date: '2016-12-15T20:32:00.000Z'
-categories: []
-keywords: []
-slug: >-
-  /@phennex/installing-a-kubernetes-1-4-cluster-on-hypriot-1-1-1-with-kubeadm-b7495638610e
+categories: 
+- Raspberry Pi
+type: "post"
+author: "Kasper Nissen"
+image: /images/1__ipFQkJrHHyzT2i82LaVLyQ.jpeg 
 ---
 
-![](img/1__ipFQkJrHHyzT2i82LaVLyQ.jpeg)
+![](/images/1__ipFQkJrHHyzT2i82LaVLyQ.jpeg)
 
 It’s been a while since our last blog post. However, we are back and again working with Kubernetes on a daily basis. This blog post will show you how to set up a Kubernetes 1.4 cluster with HypriotOS 1.1.1 and the new `kubeadm` tool.
 
@@ -24,10 +25,10 @@ For this tutorial we used 4 Raspberry Pi 3 and a Macbook Pro.
 
 ### Flashing the SD-cards
 
-First, flash the SD cards with [HypriotOS 1.1.1](https://github.com/hypriot/image-builder-rpi/releases/download/v1.1.1/hypriotos-rpi-v1.1.1.img.zip) using the Hypriot [flash tool](https://github.com/hypriot/flash).
+First, flash the SD cards with [HypriotOS 1.1.1](https://github.com/hypriot/image-builder-rpi/releases/download/v1.1.1/hypriotos-rpi-v1.1.1./images.zip) using the Hypriot [flash tool](https://github.com/hypriot/flash).
 
 ```
-$ flash --hostname master hypriotos-rpi-v1.1.1.img.zip $ flash --hostname slave01 hypriotos-rpi-v1.1.1.img.zip $ flash --hostname slave02 hypriotos-rpi-v1.1.1.img.zip $ flash --hostname slave03 hypriotos-rpi-v1.1.1.img.zip
+$ flash --hostname master hypriotos-rpi-v1.1.1./images.zip $ flash --hostname slave01 hypriotos-rpi-v1.1.1./images.zip $ flash --hostname slave02 hypriotos-rpi-v1.1.1./images.zip $ flash --hostname slave03 hypriotos-rpi-v1.1.1./images.zip
 ```
 
 When the flash of the 4 sd-cards has completed, insert them into the 4 Raspberry Pis and power them up. Make sure you are able to contact the Pis by SSH’ing into them one by one. The default password for the pirate-user is: _hypriot_
