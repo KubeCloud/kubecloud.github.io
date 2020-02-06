@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseUrl = "https://kubecloud.io"
+baseUrl = "https://kubecloud.github.io/website/"
 canonifyURLs = true
 languageCode = "en-us"
 title = "kubecloud"
